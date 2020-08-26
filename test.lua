@@ -86,8 +86,8 @@ res1, res2, res3 = test_fn2()
 print(res1, res2, res3)
 
 -- table
--- 类似 js 中的对象
-test_obj = {}
+-- 类似 js 中的对象 如果有初始值的话要使用 = 赋值
+test_obj = { init = 888 }
 test_obj.ding1 = "ding1"
 print(test_obj['ding1'])
 print(test_obj.ding1)
