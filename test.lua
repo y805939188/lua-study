@@ -98,3 +98,16 @@ module.test1 = 666
 function module.sum(a, b)
   return a + b
 end
+
+
+-- 冒号和点的区别
+test4 = { ding= 666 }
+function test4:myPrint1()
+  print('::::', self.ding)
+end
+
+function test4.myPrint2(self)
+  print('....', self.ding)
+end
+test4.myPrint2(test4)
+test4:myPrint1()
